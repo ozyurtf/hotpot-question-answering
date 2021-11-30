@@ -8,6 +8,8 @@ In this project, the main goal is to develop a model that can be able to make in
 2) It is quite diverse and relatively large dataset. There are different types of questions in different structures and in different topics. For example, there are comparison questions (e.g. Who was born in the capital of the England, Charlie Chaplin or Grant Kirkhope ?), yes/no questions as well as regular questions that we typically see in our daily lives. (e.g. The John Wall Dance is a dance performed by flexing the arms and twisting the wrist, John Wall, an American professional basketball player for the Washington Wizards, of the National Basketball Association (NBA), first performed the eponymous dance during his introduction at Big Blue Madness in October 2009, at which location?). 
 3) It includes the supporting facts, in other words, sub-texts that lead to the answers. The supporting facts help the model to make inference and reasoning.  
 
+Up until now, the best performing model was achieved by filtering out the documents that are not related to the answers by using a document classifier that was trained with a pairwise learning-to-rank loss. After filtering out these documents, the rest of the documents that are related to the answers are then put into the model to predict the answer and supporting facts jointly. The model that is trained with these filtered documents is optimized based on both token-level (for answers) and sentence-level prediction (for supporting facts) with the use of attention-based interaction between these two tasks. 
+
 
 
 
