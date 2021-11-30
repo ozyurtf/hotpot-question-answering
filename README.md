@@ -1,12 +1,16 @@
 ### HOTPOT QA
 
-In the current Question Answering applications, the answers generally can be able to found in a specific part of the context without reasoning. There is no need to make inference and look at different parts of the text to reach an answer. It is clear that this is not the case in our daily lives. When we try to find an answer to a question, the answers may not be found in the context directly and we may need to look at different parts of the text and make some kind of inference. And this is where traditional Question Answering methods are stuck. 
+In the current Question Answering applications, the answers generally can be able to found in a specific part of the context without reasoning. In these applications, there is no need to make inference and look at different parts of the text to reach an answer. It is clear that this is not the case in many of the questions wee see in our daily lives. When we try to find an answer to a question, the answers may not always be found in the context directly and we may need to look at different parts of the text and make some kind of inference. This is where traditional Question Answering systems are stuck. 
 
-In this project, the main goal is to develop a method that can be able to make inference and reasoning when required to be able to find the answer of the question in the context. Because there are some ready-to-use datasets that can be used for this goal, data preparation step is skipped. The data that is used in this project is HotpotQA because of three reasons: 
+In this project, the main goal is to develop a model that can be able to make inference and reasoning when required to be able to find an answer to the different types of questions. Because there are some ready-to-use datasets that can be used for this goal, data preparation step is skipped. The dataset that is used in this project is HotpotQA because of the the reasons below: 
 
 1) It was prepared to test the systems' ability to make reasoning and inference in a large context. 
-2) It is quite diverse and relatively large dataset. 
+2) It is quite diverse and relatively large dataset. There are different types of questions in different structures and in different topics. For example, there are comparison questions (e.g. Who was born in the capital of the England, Charlie Chaplin or Grant Kirkhope ?), yes/no questions as well as regular questions that we typically see in our daily lives. (e.g. The John Wall Dance is a dance performed by flexing the arms and twisting the wrist, John Wall, an American professional basketball player for the Washington Wizards, of the National Basketball Association (NBA), first performed the eponymous dance during his introduction at Big Blue Madness in October 2009, at which location?). 
 3) It includes the supporting facts, in other words, sub-texts that lead to the answers. The supporting facts help the model to make inference and reasoning.  
+
+
+
+
 
 
 
